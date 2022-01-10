@@ -5,3 +5,4 @@
 *.fdb_latexmk
 *.xdv
 .vscode
+*.out

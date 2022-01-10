@@ -25,6 +25,15 @@
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{changepage}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Joseph Gurr} % Your name
@@ -33,6 +42,8 @@
 \address{joseph.gurr@outlook.com} % Your phone number and email
 
 \begin{document}
+
+This document is created with the \TeX \ typesetting language and kept under version control. You can find the most recent version \href{https://github.com/joegurr/resume/blob/main/resume.pdf}{here}.
 
 %------------------
 % EDUCATION SECTION
@@ -43,12 +54,13 @@
     \\ B. Mathematics (Pure Mathematics) \hfill {\em GPA 6.96/7, WAM 91.39/100}
 \end{rSection}
 
-%----------------------
-% CERTIFICATION SECTION
-%----------------------
+%------------------------
+% CERTIFICATES SECTION
+%------------------------
 
-%\begin{rSection}{Certifications}
-%\end{rSection}
+\begin{rSection}{Professional Certifications}
+    \item Apache Druid Basics \hfill {\em expires Dec 2023}
+\end{rSection}
 
 %------------------------
 % WORK EXPERIENCE SECTION
@@ -62,10 +74,10 @@
     distributed and renewable.
 
     \begin{adjustwidth}{2em}{}
-        \begin{rSubsection}{Data Science Engineer}{\em July 2021 - present}{}{}
-            \item I am working on developing optimisation procedures that run on an IoT device to control
-            distributed energy resources. This involves having to run forecasts in real time, solve them, process the output, and
-            then have the control implemented on an external device.
+        \begin{rSubsection}{Data Science Engineer}{\em July 2021 - Janurary 2022}{}{}
+            \item My team developed distributed optimisation procedures that run on edge devices (Raspberry Pi) to control
+            distributed energy resources. This involved having to run forecasts in real time, solve a convex optimisation problem, process the output, and
+            then have the control implemented on an external device. This was done in Python.
         \end{rSubsection}
 
         \begin{rSubsection}{Data Services Team Lead (acting)}{\em January 2021 - July 2021}{}{}
@@ -131,12 +143,13 @@
     blade, and jinja2), CSS* (SASS*, SCSS*), Javascript*/Typescript* (Angular*, Ionic*)
     \item {\bf Back-End} Python* (Django*, Flask), NodeJS*, Java
     \item {\bf Data} RDBMS (Postgres*, MySQL*, MariaDB, SQLite), NoSQL (DynamoDB*, MongoDB),
-    \\ Apache Druid*, Apache Superset*, Pandas*/Numpy*/other Python data packages*, R
+    \\ Apache Druid*, Apache Superset*, RabbitMQ*, Kafka*, Redis*, Pandas*/Numpy*/other Python data packages*, R
     \item {\bf Operating Systems} Ubuntu* (16.04, 18.04*, 20.04*), MacOS X, Windows 10
-    \item {\bf Other} git* (GitHub*, GitLab*, Bitbucket*), Docker*, AWS*, \TeX\ (\LaTeX),
+    \item {\bf Other} git* (GitHub*, GitLab*, Bitbucket*), Docker*, AWS* (mainly S3*, Lambda*, APIGateway*, CloudFormation*), \TeX\ (\LaTeX),
     Atlassian Suite* (JIRA*, Confluence*)
     \item Other technologies/programming languages I have used in a limited capacity include:
     Ansible, Vue, React, LISP, PHP, C, C++, SPSS, MATLAB, Haskell, Docker Swarm, and Kubernetes
+    \item I am experienced in CI/CD, TDD, and Agile
 \end{rSection}
 
 %------------------------
@@ -151,14 +164,6 @@
     \hfill {\em 2015}
     \item Awarded the Shaping Futures Scholarship \hfill {\em 2015} \
     \item Awarded the Vice Chancellor's Scholarship for Academic Excellence in Year 12 \hfill {\em 2015}
-\end{rSection}
-
-%------------------------
-% CERTIFICATES SECTION
-%------------------------
-
-\begin{rSection}{Professional Certifications}
-    \item Apache Druid Basics \hfill {\em expires Dec 2023}
 \end{rSection}
 
 \end{document}
